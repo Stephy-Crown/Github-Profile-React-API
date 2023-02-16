@@ -4,6 +4,7 @@ import "./components/Card";
 import "./App.css";
 // import Card from "./components/Card";
 import CardList from "./components/CardList";
+import Form from "./components/Form";
 
 function App({ title }) {
   // const [count, setCount] = useState(0);
@@ -28,7 +29,8 @@ function App({ title }) {
   return (
     <>
       <div className="header font-bold text-3xl font-serif">{title}</div>
-      <CardList testData={testData} />
+      <Form />
+      <CardList testData={testData} className="mx-auto" />
     </>
   );
 }
